@@ -32,6 +32,14 @@ async function welcomeAnimation() {
 
 await welcomeAnimation();
 
+
+function generateRollNumber() {
+  // Generate a unique roll number using timestamp and a random number
+  const timestamp = Date.now().toString();
+  const randomNum = Math.floor(Math.random() * 10+1).toString().padStart(4, '0'); // Ensure 4 digits
+  return timestamp + randomNum;
+}
+
 // Function to prompt the user for student information
 async function promptUser() {
   const studentInfo = await inquirer.prompt([
@@ -99,6 +107,12 @@ async function promptUser() {
     console.log(chalk.bgYellow.white.bold("Exiting The Program..."));
     return; // Exit the function
   }
+  
+    // Generate roll number
+    const rollNumber = generateRollNumber();
+    
+    // Add roll number to studentInfo object
+    studentInfo.rollNumber = rollNumber;
 
   // Print student information with styling
   for (const [key, value] of Object.entries(studentInfo)) {
