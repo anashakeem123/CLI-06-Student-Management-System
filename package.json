@@ -1,0 +1,23 @@
+{
+  "name": "cli-06-student-management-system",
+  "version": "1.0.1",
+  "description": "This is a CLI Student Management System Using Typescript And Node.js/Inquirer.",
+  "main": "index.js",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anas Hakim",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk-animation": "^2.0.3",
+    "inquirer": "^9.2.20"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
+    "@types/inquirer": "^9.0.7"
+  }
+}
