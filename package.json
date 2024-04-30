@@ -1,6 +1,6 @@
 {
   "name": "cli-06-student-management-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a CLI Student Management System Using Typescript And Node.js/Inquirer.",
   "main": "index.js",
   "type": "module",
